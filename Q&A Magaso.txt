@@ -1,0 +1,27 @@
+PROGRAM DESIGN AND CLASS STRUCTURE
+
+The program is a simple Bank Account System implemented using Object-Oriented Programming (OOP).
+A class named BankAccount is used to represent a bank account with two attributes: owner and balance.
+
+The class includes three user-defined methods:
+deposit() - to add money to the account
+withdraw() - to remove money while checking for sufficient balance
+display_balance() - to show the current account details
+
+This class structure was chosen because it closely represents real-life banking operations and keeps the program organized and easy to understand.
+
+
+USER INPUT AND EXCEPTION HANDLING
+
+User input is handled using the input() function to get the account owner’s name, menu choices, and transaction amounts.
+A try–except block is placed inside the main menu loop to handle errors such as invalid numeric input, negative values, and insufficient balance.
+
+When an error occurs (for example, attempting to withdraw more money than the current balance), the error message is displayed and the program automatically returns to the main menu instead of terminating.
+This ensures smooth program flow and prevents unexpected crashes.
+
+
+LIMITATION AND POSSIBLE IMPROVEMENTS
+
+One limitation of the program is that it supports only one bank account at a time. 
+This can be improved by adding another class to manage multiple BankAccount objects using lists or dictionaries. 
+Additionally, the program could be enhanced by adding features such as transaction history or saving account data to a file for future use.
